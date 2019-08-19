@@ -26,6 +26,29 @@ In addition, here are some other documents you may wish to read:
 
 You'll find many other useful documents on our [Wiki](https://github.com/istio/istio/wiki).
 
+## soda-infra usage
+
+      helm install install/kubernetes/helm/istio \
+          --name istio \
+          --namespace istio-system \
+          --set tracing.enabled=true \
+          --set global.mtls.enabled=true \
+          --set grafana.enabled=true \
+          --set kiali.enabled=true \
+          --set servicegraph.enabled=true
+     
+### Changelog
+
+istio/install/kubernetes/helm/istio/charts/kiali/values.yaml
+
+hub: quay.io/kiali      -> soda2019
+
+image: kiali            -> aladdin
+
+tag: v1.1.0             -> v1.0.0
+
+***
+
 ## Introduction
 
 Istio is an open platform for providing a uniform way to integrate
