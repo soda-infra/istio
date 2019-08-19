@@ -42,9 +42,7 @@ You'll find many other useful documents on our [Wiki](https://github.com/istio/i
 istio/install/kubernetes/helm/istio/charts/kiali/values.yaml
 
 hub: quay.io/kiali      -> soda2019
-
 image: kiali            -> aladdin
-
 tag: v1.1.0             -> v1.0.0
 
 ***
